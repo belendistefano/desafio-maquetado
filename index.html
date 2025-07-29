@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Belu Di Stefano</title>
+</head>
+<body>
+    <header>
+        <div id="logoContainer">
+            <img src="./images/logo.png" alt="Logo">
+        </div>
+        <div id="menuContainer">
+            <div id="mobileMenu">
+                <img src="./images/mobileMenu.png" alt="menuLogo">
+            </div>
+            <ul id="webMenu">
+                <li class="webMenu-li"><a href="#aboutMe">About Me</a></li>
+                <li class="webMenu-li"><a href="#myServices">Services</a></li>
+                <li class="webMenu-li"><a href="#contactMe">Contact Me</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="mobileMenuDisplay">
+        <ul id="mobileMenuList">
+            <li class="mobileMenu-li"><a href="#aboutMe">About Me</a></li>
+            <li class="mobileMenu-li"><a href="#myServices">Services</a></li>
+            <li class="mobileMenu-li"><a href="#">Contact Me</a></li>
+        </ul>
+    </div>
+    <div id="introContainer">
+        <h1 id="introContainerTitle">Welcome to</br>my site!</h1>
+        <img id="introContainerImg" src="./images/belu.png" alt="My Picture">
+    </div>
+    <div id="aboutMe">
+        <div id="aboutMeImg">
+            <img src="./images/aboutMePic.png" alt="About Me Image">
+        </div>
+        <div id="aboutMeText">
+            <h4>I'm Belu</h4>
+            <p>I'm a Software Development student from Buenos Aires, Argentina. I live in Hamilton, ON and I will be graduating Mohawk College in December 2025.</p>
+        </div>
+    </div>
+    <div id="myServices">
+        <h2>My Services</h2>
+        <div id="cardsContainer">
+        <div class="myServicesCard">
+            <div class="imgContainer">
+            <img src="./images/webdesign.png" alt="My Services">
+            </div>
+            <h5>Card 1</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui officiis velit nihil, distinctio ipsam minus cum numquam neque maxime quaerat earum corporis delectus voluptate consequuntur ratione quisquam voluptatem. Quas, sit!</p>
+        </div>
+        <div class="myServicesCard">
+            <div class="imgContainer">
+            <img src="./images/aboutMePicture.png" alt="My Services">
+            </div>
+            <h5>Card 2</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui officiis velit nihil, distinctio ipsam minus cum numquam neque maxime quaerat earum corporis delectus voluptate consequuntur ratione quisquam voluptatem. Quas, sit!</p>
+        </div>
+        <div class="myServicesCard">
+            <div class="imgContainer">
+            <img src="./images/travel.png" alt="My Services">
+            </div>
+            <h5>Card 3</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui officiis velit nihil, distinctio ipsam minus cum numquam neque maxime quaerat earum corporis delectus voluptate consequuntur ratione quisquam voluptatem. Quas, sit!</p>
+        </div>
+        </div>
+    </div>
+    <div id="contactMe">
+        <div id="contactMeTitle"><h2>Contact Me</h2></div>
+        <div id="contactForm">
+            <form action="#">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Message</label>
+                <textarea name="message" id="message"></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </div>
+    <footer id="footer">
+        <div id="footerLogoContainer">
+            <img src="./images/logo.png" alt="Logo">
+            <p>&copy; 2025 Belu</p>
+        </div>
+        <div id="socialMediaContainer">
+            <div class="socialMedia">
+                <div>
+                <img src="./images/linkedin.png" alt="Social media logo">
+                </div>
+                <div>
+                <p>Linkedin</p>
+                </div>
+            </div>
+            <div class="socialMedia">
+                <div>
+                <img src="./images/instagram.png" alt="Social media logo">
+                </div>
+                <div>
+                <p>Instagram</p>
+                </div>
+            </div>
+            <div class="socialMedia">
+                <div>
+                <img src="./images/github.png" alt="Social media logo">
+                </div>
+                <div>
+                <p>Github</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+    document.getElementById("mobileMenu").addEventListener("click", () => {
+        const display = document.getElementById("mobileMenuDisplay");
+        display.style.display = (display.style.display === "block") ? "none" : "block";
+    });
+    </script>
+</body>
+</html>

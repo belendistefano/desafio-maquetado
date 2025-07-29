@@ -1,0 +1,305 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat", sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 30px;
+    margin-left: 30px;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+}
+
+#webMenu{
+    display: flex;
+    gap: 30px;
+}
+
+.webMenu-li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#introContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#introContainerImg{
+    max-width: 300px;
+}
+
+#aboutMe{
+    background-color: black;
+    color: white;
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#aboutMeImg, #aboutMeText{
+    width: 50%;
+}
+
+#aboutMeImg{
+    text-align: right;
+    padding-right: 60px;
+}
+
+#aboutMeText{
+    padding-top: 30px;
+    padding-right: 130px;
+}
+
+#myServices{
+    text-align: center;
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-top: 40px;
+}
+
+#cardsContainer{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    gap: 50px;
+}
+
+.myServicesCard img{
+    max-width: 150px;
+}
+
+.imgContainer{
+    min-height: 160px;
+}
+
+#mobileMenu{
+    display: none;
+}
+
+#mobileMenuDisplay{
+    display: none;
+}
+
+#contactMe{
+    background-color: black;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    gap: 70px;
+}
+
+#contactMeTitle, #contactForm{
+    width: 50%;
+}
+
+#contactMeTitle{
+    text-align: right;
+}
+
+#contactForm *{
+    box-sizing: border-box;
+}
+
+#contactForm form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contactForm label {
+    font-size: 12px;
+    margin: 10px 0 4px;
+}
+
+#contactForm input[type="text"],
+#contactForm input[type="email"],
+#contactForm textarea {
+    padding: 8px;
+    width: 300px;
+    font-size: 14px;
+    border: none;
+    background-color: white;
+    color: black;
+    resize: none;
+}
+
+#contactForm textarea {
+    height: 80px;
+}
+
+#contactForm input[type="submit"] {
+    margin-top: 20px;
+    width: 300px;
+    padding: 8px;
+    background-color: #f565af;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contactForm input[type="submit"]:hover {
+    background-color: #88084a;
+}
+
+#footer{
+    background-color: #6c6c6c;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+}
+
+#footerLogoContainer{
+    text-align: center;
+    font-weight: bold;
+}
+
+.socialMedia{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: bold;
+}
+
+.socialMedia img{
+    max-width: 30px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+        margin: 0;
+    }
+
+    #webMenu {
+        display: none;
+    }
+
+    #mobileMenu {
+        display: block;
+    }
+
+    #introContainer {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #introContainerImg {
+        margin-top: 20px;
+        max-width: 100%;
+    }
+
+    #aboutMe {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    #aboutMeImg, #aboutMeText {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    #aboutMeImg img {
+        max-width: 100%;
+    }
+
+    #myServices {
+        padding: 20px;
+    }
+
+    #cardsContainer {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .myServicesCard {
+        text-align: center;
+    }
+
+    #contactMe {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    #contactMeTitle, #contactForm {
+        width: 100%;
+        text-align: center;
+    }
+
+    #contactForm form {
+        align-items: center;
+    }
+
+    #footer {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #footerLogoContainer{
+        text-align: left;
+    }
+
+    .socialMedia {
+        justify-content: left;
+    }
+
+    #mobileMenuDisplay {
+        display: none;
+        background-color: black;
+        width: 100%;
+        top: 70px;
+        left: 0;
+        z-index: 1000;
+        padding: 20px 0;
+    }
+
+    #mobileMenuDisplay ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    #mobileMenuDisplay a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    #mobileMenuDisplay a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    #mobileMenuDisplay li{
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+
+    #mobileMenuDisplay li:hover{
+        background-color: #f565af;
+    }
+}
